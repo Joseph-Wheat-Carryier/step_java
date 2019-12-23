@@ -10,6 +10,7 @@ public class homework2 {
 
     public static class I {
         int key = 2;
+        AtomicInteger atomicInteger;
 
         public synchronized void plus() {
             System.out.printf("%s + 1 = %d   key:%d\n", Thread.currentThread().getName(), ++i,key);
@@ -97,5 +98,7 @@ public class homework2 {
         t2.start();
         t3.start();
         t4.start();
+
+
     }
 }
